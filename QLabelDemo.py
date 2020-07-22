@@ -42,7 +42,7 @@ class QLabelDemo(QWidget):
         lable3.setPixmap(QPixmap("./images/python.jpg"))
 
         #如果设置为true用浏览器打开网页，设置为false调用槽函数
-        lable4.setOpenExternalLinks(True)
+        lable4.setOpenExternalLinks(False)
         lable4.setText("<a href='https://geekori.com'>欢迎来到本网站</a>")
         lable4.setAlignment(Qt.AlignRight)
         lable4.setToolTip('这是一个超级链接')
