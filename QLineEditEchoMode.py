@@ -12,6 +12,8 @@ QLineEdit控件与回显模式
 
 二、placeholdertext:当文本输入框没有输入时 显示提示文字。
 
+一些小操作：
+MAC: Command   Windows:Control(ctrl)
 '''
 from PyQt5.QtWidgets import *
 import sys
