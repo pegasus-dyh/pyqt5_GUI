@@ -39,7 +39,7 @@ class QLabelDemo(QWidget):
 
         lable3.setAlignment(Qt.AlignCenter)
         lable3.setToolTip("这是一个图片标签")
-        lable3.setPixmap(QPixmap("../images/python.jpg"))
+        lable3.setPixmap(QPixmap("images/python.jpg"))
 
         #如果设置为true用浏览器打开网页，设置为false调用槽函数
         lable4.setOpenExternalLinks(False)

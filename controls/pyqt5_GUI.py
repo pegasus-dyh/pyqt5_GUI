@@ -34,7 +34,7 @@ class A01(QMainWindow):
 
 if __name__=='__main__':
     app=QApplication(sys.argv)
-    app.setWindowIcon(QIcon('../images/Logo.ico'))
+    app.setWindowIcon(QIcon('images/Logo.ico'))
     main=A01()
     main.show()
     sys.exit(app.exec_())
