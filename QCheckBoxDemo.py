@@ -5,7 +5,9 @@
     未选中：0
     半选中：1
     选中 ：2
-
+setChecked 控制初始选中或不选中状态
+stateChanged 槽相关
+setTristate  设置为True 则开启半选中模式
 '''
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import Qt
@@ -20,7 +22,7 @@ class QCheckBoxDemo(QWidget):
         layout=QHBoxLayout()
 
         self.CheckBox1=QCheckBox('复选框控件1')
-        self.CheckBox1.setChecked(True)
+        self.CheckBox1.setChecked(True) #此方法让复选框处于选中或未选中状态
         self.CheckBox1.stateChanged.connect(lambda :self.CheckBoxState(self.CheckBox1))
         layout.addWidget(self.CheckBox1)
 
@@ -30,8 +32,8 @@ class QCheckBoxDemo(QWidget):
 
         self.CheckBox3=QCheckBox('半选中')
         self.CheckBox3.stateChanged.connect(lambda :self.CheckBoxState(self.CheckBox3))
-        self.CheckBox3.setTristate(True)
-        self.CheckBox3.setCheckState(Qt.PartiallyChecked)
+        self.CheckBox3.setTristate(True)#控制半选
+        self.CheckBox3.setCheckState(Qt.PartiallyChecked)#描述当前复选框处于何种状态三种，而上面的setChecked是两种状态。
         layout.addWidget(self.CheckBox3)
 
         self.setLayout(layout)
