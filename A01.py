@@ -1,3 +1,7 @@
+'''
+初级窗口，最后有修改窗口左上角图标的方法
+'''
+
 import sys
 from PyQt5.QtWidgets import QApplication,QDesktopWidget,QMainWindow
 from PyQt5.QtGui import QIcon
@@ -34,7 +38,7 @@ class A01(QMainWindow):
 
 if __name__=='__main__':
     app=QApplication(sys.argv)
-    app.setWindowIcon(QIcon('./images/Logo.ico'))
+    app.setWindowIcon(QIcon('./images/Logo.ico')) #设置左上角窗口图标
     main=A01()
     main.show()
     sys.exit(app.exec_())

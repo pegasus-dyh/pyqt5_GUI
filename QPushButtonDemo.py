@@ -11,6 +11,8 @@
 
 本例种基于QPushButton主要学习：1两类信号与槽的绑定方式
                            2在按钮中加入图片
+
+槽绑定--clicked
 '''
 
 from PyQt5.QtWidgets import *
