@@ -6,8 +6,6 @@ QRadioButton(单选按钮控件)
 
 import sys
 from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
 
 class QRadioButtonDemo(QWidget):
     def __init__(self):
