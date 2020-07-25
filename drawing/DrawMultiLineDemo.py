@@ -42,7 +42,7 @@ class DrawMulitiLineDemo(QWidget):
         painter.setPen(pen)
         painter.drawLine(20, 240, 250, 240)
 
-        
+
 
         painter.end()
 
