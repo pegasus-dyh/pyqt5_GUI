@@ -16,7 +16,7 @@ class MyCalendar(QWidget):
         self.cal.setMinimumDate(QDate(1988,1,1))
         self.cal.setMaximumDate(QDate(2088,1,1))
 
-        self.cal.setGridVisible(True)
+        self.cal.setGridVisible(True) #显示网格
         self.cal.move(20,20)
         self.cal.clicked.connect(self.showDate)
         self.label = QLabel(self)
