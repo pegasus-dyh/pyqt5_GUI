@@ -36,7 +36,7 @@ class ShowTime(QWidget):
     def showTime(self):
         time = QDateTime.currentDateTime()
 
-        timeDisplay = time.toString("yyyy-MM-dd hh:mm:ss dddd")
+        timeDisplay = time.toString("yyyy-MM-dd dddd hh:mm:ss")
         self.label.setText(timeDisplay)
 
     def startTimer(self):
