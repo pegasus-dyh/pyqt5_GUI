@@ -13,7 +13,7 @@ class HBoxLayoutAlign(QWidget) :
         self.setWindowTitle("水平盒布局")
 
         hlayout = QHBoxLayout()
-        hlayout.addWidget(QPushButton('按钮1'),2,Qt.AlignLeft | Qt.AlignTop)
+        hlayout.addWidget(QPushButton('按钮1'),2,Qt.AlignLeft | Qt.AlignTop) #参数2 4 1 1等表示水平占位
         hlayout.addWidget(QPushButton('按钮2'),4,Qt.AlignLeft | Qt.AlignTop)
         hlayout.addWidget(QPushButton('按钮3'),1,Qt.AlignLeft | Qt.AlignTop)
         hlayout.addWidget(QPushButton('按钮4'),1,Qt.AlignLeft | Qt.AlignBottom)
