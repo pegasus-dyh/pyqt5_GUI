@@ -14,6 +14,7 @@ print(x)
 
 a21=[(i,j) for i in range(5) for j in range(5)]
 print(a21)
+这两段的输出相同
 '''
 
 import sys,math
