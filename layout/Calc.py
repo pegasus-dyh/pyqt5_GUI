@@ -3,6 +3,17 @@
 这里主要用到了zip、*
 zip() 函数用于将可迭代的对象作为参数，将对象中对应的元素打包成一个个元组，然后返回由这些元组组成的列表。
 如果各个迭代器的元素个数不一致，则返回列表长度与最短的对象相同，利用 * 号操作符，可以将元组解压为列表。
+
+小技巧：
+x=[]
+for i in range(5):
+    for j in range(5):
+        a11=(i,j)
+        x.append(a11)
+print(x)
+
+a21=[(i,j) for i in range(5) for j in range(5)]
+print(a21)
 '''
 
 import sys,math
