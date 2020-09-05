@@ -1,5 +1,6 @@
 '''
 为类添加多个信号
+涉及重载信号部分
 '''
 
 from PyQt5.QtCore import *
